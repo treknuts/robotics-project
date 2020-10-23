@@ -30,8 +30,10 @@ grid_x1, grid_y1 = simulation.to_grid(x1, y1)
 # get obstacle map
 ob_map = sim.obstacle_map
 
-for i in range(50):
+for i in range(500):
     robot1.command(steering=0.0, speed_forward=1.0)  # send commands to robot1
     sim.step()  # call step in a loop, this updates the simulation
+
+
 
 robot1.command()  # stops vehicle when no arguments given

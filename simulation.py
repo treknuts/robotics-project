@@ -357,7 +357,7 @@ class Simulator(object):
 
     @classmethod
     def load_and_configure_map(cls):
-        grid = cls._load_map_csv(r"\Project_Obstacle_Map.csv")
+        grid = cls._load_map_csv(r"/Project_Obstacle_Map.csv")
         grid = cls._flip_map_horizontal(grid)
         return grid
 
@@ -455,6 +455,3 @@ class Simulator(object):
             self.gate_visual = list()
             self.activated = False
             self.name = name
-
-if __name__ == '__main__':
-    print("poop")
